@@ -13,9 +13,11 @@ import androidx.compose.ui.unit.sp
 import com.tallbreadstick.jpc_calculator.ui.theme.White
 
 @Composable
-fun ExpressionPanel() {
+fun ExpressionPanel(
+    expression: String
+) {
     Text(
-        text = "",
+        text = expression,
         style = TextStyle(fontSize = 24.sp),
         textAlign = TextAlign.End,
         modifier = Modifier
